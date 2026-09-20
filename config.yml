@@ -1,0 +1,188 @@
+project:
+  name: "Madrid rail-station population density"
+  phase: 7
+  crs: 25830
+
+catastro:
+  atom_snapshot: "2026-08-21"
+  atom_feed: "https://www.catastro.hacienda.gob.es/INSPIRE/buildings/28/ES.SDGC.bu.atom_28.xml"
+  insecure_ssl: true
+  municipalities:
+    - code: "28900"
+      ine_code: "28079"
+      name: "MADRID"
+      url_name: "MADRID"
+    - code: "28115"
+      ine_code: "28115"
+      name: "POZUELO DE ALARCON"
+      url_name: "POZUELO DE ALARCON"
+    - code: "28106"
+      ine_code: "28106"
+      name: "PARLA"
+      url_name: "PARLA"
+  case_parcels:
+    - parcel_ref: "0765815VK4706F"
+      case: "normal_apartment_chamberi"
+    - parcel_ref: "0734412VK4703D"
+      case: "vertical_property_lavapies"
+    - parcel_ref: "3574309VK3737S"
+      case: "detached_housing_pozuelo"
+    - parcel_ref: "0647504VK4704H"
+      case: "mixed_use_gran_via_15"
+    - parcel_ref: "4845611VK3544N"
+      case: "outer_apartment_parla"
+    - parcel_ref: "0992301VK5709D"
+      case: "multi_block_residential"
+    - parcel_ref: "3045201VK4384E"
+      case: "large_modern_development"
+    - parcel_ref: "2704101VK3720D"
+      case: "extreme_multipart_outlier"
+
+cat:
+  residential_area_min_m2: 24
+  qualifying_typologies: ["0111", "0112", "0121", "0122"]
+  collective_typologies: ["0111", "0112"]
+  single_family_typologies: ["0121", "0122"]
+
+phase1_gates:
+  go_join_coverage: 0.99
+  no_go_join_coverage: 0.95
+  primary_rule_coverage: 0.95
+  maximum_unresolved_share: 0.01
+  maximum_fallback_share: 0.05
+  maximum_spatially_ambiguous_share: 0.10
+
+phase1b:
+  station_snapshot: "2026-09-15"
+  radii_m: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+  minor_component_max_footprint_m2: 25
+  minor_component_max_volume_share: 0.01
+  sensitivity_relative_tolerance: 0.02
+  sensitivity_required_cell_share: 0.95
+  minimum_baseline_dwellings: 100
+  station_services:
+    - mode: "metro"
+      code: "M4"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+    - mode: "metro_ligero_tranvia"
+      code: "M10"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M10_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+    - mode: "cercanias"
+      code: "M5"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M5_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+
+phase2:
+  population_year: 2025
+  population_reference_date: "2025-01-01"
+  cat_snapshot: "2026-08-14"
+  inspire_snapshot: "2026-08-21"
+  download_workers: 6
+  ine_sections_url: "https://www.ine.es/prodyser/cartografia/seccionado_2025.zip"
+  ine_population_url: "https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/69210"
+  boundary_split_materiality_population_share: 0.001
+  maximum_section_fallback_population_share: 0.001
+
+phase3:
+  station_snapshot: "2026-09-15"
+  scope: "urban_rail"
+  reference_point_method: "official_crtm_source_point_nearest_group_mean"
+  preferred_distance_method: "nearest_official_entrance_then_station_point_fallback"
+  maximum_source_point_separation_m: 500
+  maximum_entrance_to_station_point_m: 1000
+  dispersion_review_threshold_m: 250
+  crtm_license_url: "https://www.crtm.es/licencia-de-uso"
+  station_services:
+    - source_mode: "metro"
+      code: "M4"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      access_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/1/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      platform_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+    - source_mode: "metro_ligero_tranvia"
+      code: "M10"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M10_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      access_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M10_Red/FeatureServer/1/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      platform_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M10_Red/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+    - source_mode: "cercanias"
+      code: "M5"
+      url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M5_Red/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      access_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M5_Red/FeatureServer/1/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+      platform_url: "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M5_Red/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=25830&f=geojson"
+  exceptions:
+    split_interchange_62_source_id: "4_37"
+    split_interchange_62_name: "Santo Domingo"
+
+phase4:
+  radii_m: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+  maximum_distance_m: 1500
+  primary_method: "nearest_official_entrance_then_station_point_fallback"
+  sensitivity_method: "official_station_point"
+  selected_output_radii_m: [200, 400, 600, 800, 1000]
+  distance_tolerance_m: 0.01
+  brute_force_station_ids: ["crtm_interchange_058", "crtm_interchange_025", "crtm_interchange_054", "crtm_interchange_100", "crtm_interchange_387"]
+
+phase5:
+  population_variants: ["primary_dwellings", "residential_area", "component_footprint", "component_equal", "component_volume_all", "section_boundary_area_split"]
+  selected_radii_m: [200, 400, 600, 800, 1000]
+  threshold_band_m: 50
+  minimum_station_rank_correlation: 0.90
+  minimum_top10_overlap_share: 0.60
+  maximum_regional_population_share_difference: 0.02
+  population_conservation_tolerance: 0.000001
+
+phase6:
+  title: "How many people live near Madrid's rail stations?"
+  canonical_url: "https://danielalmazan.com/madrid-rail-density/"
+  default_radius_m: 800
+  map_width: 1000
+  map_height: 860
+  boundary_simplification_m: 200
+  publication_radii_m: [200, 400, 600, 800, 1000]
+
+phase7:
+  curve_step_m: 25
+  histogram_step_m: 100
+  maximum_distance_m: 1500
+  default_radius_m: 800
+  madrid_municipality_code: "28079"
+  district_names:
+    "01": "Centro"
+    "02": "Arganzuela"
+    "03": "Retiro"
+    "04": "Salamanca"
+    "05": "Chamartín"
+    "06": "Tetuán"
+    "07": "Chamberí"
+    "08": "Fuencarral-El Pardo"
+    "09": "Moncloa-Aravaca"
+    "10": "Latina"
+    "11": "Carabanchel"
+    "12": "Usera"
+    "13": "Puente de Vallecas"
+    "14": "Moratalaz"
+    "15": "Ciudad Lineal"
+    "16": "Hortaleza"
+    "17": "Villaverde"
+    "18": "Villa de Vallecas"
+    "19": "Vicálvaro"
+    "20": "San Blas-Canillejas"
+    "21": "Barajas"
+
+paths:
+  inspire_raw: "data/raw/catastro/inspire/2026-08-21"
+  cat_raw: "data/raw/catastro/cat"
+  interim: "data/interim/catastro_rds"
+  validation: "validation"
+  rail_raw: "data/raw/rail/prototype_crtm_2026-09-15"
+  ine_2025_raw: "data/raw/ine/2025"
+  phase2_interim: "data/interim/phase2"
+  phase2_derived: "data/derived/building_population"
+  rail_phase3_raw: "data/raw/rail/crtm_2026-09-15"
+  phase3_interim: "data/interim/phase3"
+  phase3_derived: "data/derived/stations"
+  phase4_derived: "data/derived/catchments"
+  phase5_derived: "data/derived/sensitivity"
+  phase6_derived: "data/derived/web"
+  phase7_derived: "data/derived/phase7"
+  phase7_site: "site_phase7"
+  phase7_frontend: "frontend"
+  site: "site"

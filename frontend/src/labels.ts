@@ -1,0 +1,20 @@
+const replacements:[RegExp,string][]=[
+  [/\bAmerica\b/g,'América'],[/\bVicalvaro\b/g,'Vicálvaro'],[/\bEstacion\b/g,'Estación'],
+  [/\bJardin\b/g,'Jardín'],[/\bMartinez\b/g,'Martínez'],[/\bMartin\b/g,'Martín'],
+  [/\bConcepcion\b/g,'Concepción'],[/\bAngeles\b/g,'Ángeles'],[/\bMostoles\b/g,'Móstoles'],
+  [/\bSofia\b/g,'Sofía'],[/\bMaria\b/g,'María'],[/\bPio\b/g,'Pío'],
+  [/\bPrincipe\b/g,'Príncipe'],[/\bAngel\b/g,'Ángel'],[/\bJose\b/g,'José'],
+  [/\bIlustracion\b/g,'Ilustración'],[/\bAviacion\b/g,'Aviación'],[/\bBambu\b/g,'Bambú'],
+  [/\bBelgica\b/g,'Bélgica'],[/\bBatan\b/g,'Batán'],[/\bLeon\b/g,'León'],
+  [/\bGarcia\b/g,'García'],[/\bGran Via\b/g,'Gran Vía'],[/\bGuzman\b/g,'Guzmán'],
+  [/\bJoaquin\b/g,'Joaquín'],[/\bJulian\b/g,'Julián'],[/\bLavapies\b/g,'Lavapiés'],
+  [/\bMarques\b/g,'Marqués'],[/\bMenendez\b/g,'Menéndez'],[/\bHernandez\b/g,'Hernández'],
+  [/\bMonteprincipe\b/g,'Montepríncipe'],[/\bNuñez\b/g,'Núñez'],[/\bOpera\b/g,'Ópera'],
+  [/\bPacifico\b/g,'Pacífico'],[/\bPoligono\b/g,'Polígono'],[/\bRepublica\b/g,'República'],
+  [/\bRios\b/g,'Ríos'],[/\bRuben Dario\b/g,'Rubén Darío'],[/\bFermin\b/g,'Fermín'],
+  [/\bBernabeu\b/g,'Bernabéu'],[/\bTetuan\b/g,'Tetuán'],[/\bVelazquez\b/g,'Velázquez'],
+  [/\bXiii\b/g,'XIII'],[/\bXii\b/g,'XII'],[/\bIi\b/g,'II'],[/\bXxi\b/g,'XXI'],
+  [/T1-t2-t3/g,'T1-T2-T3'],[/S\.s\./g,'S. S.'],[/Arganzuela-planetario/g,'Arganzuela-Planetario']
+];
+
+export function stationName(name:string){return replacements.reduce((value,[pattern,replacement])=>value.replace(pattern,replacement),name);}

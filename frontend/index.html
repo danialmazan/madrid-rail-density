@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Straight-line distances between Madrid residents and Metro, Cercanías, Metro Ligero and Tranvía de Parla." />
+  <meta property="og:title" content="How close does Madrid live to rail?" />
+  <meta property="og:description" content="Building-level rail distance analysis for the Comunidad de Madrid." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://danielalmazan.com/madrid-rail-density/" />
+  <link rel="canonical" href="https://danielalmazan.com/madrid-rail-density/" />
+  <title>How close does Madrid live to rail?</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to analysis</a>
+  <header class="masthead">
+    <a href="https://danielalmazan.com/" class="wordmark">Daniel Almazán</a>
+    <p data-i18n="strap">Population · Madrid · Urban rail</p>
+    <div class="language language-header" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><span>/</span><button data-lang="es" aria-pressed="false">ES</button></div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow" data-i18n="heroEyebrow">357 stations · 644,613 residential components</p>
+      <h1 data-i18n-html="heroTitle">How close does<br><em>Madrid live to rail?</em></h1>
+      <p class="dek" data-i18n="heroDek">A building-level view of straight-line distance to Metro, Cercanías, Metro Ligero and Tranvía de Parla.</p>
+      <div class="hero-median"><span data-i18n="medianResident">Median resident distance</span><strong id="hero-median">—</strong><small data-i18n="entranceMethod">to nearest station entrance</small></div>
+      <div class="hero-rings" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+    </section>
+
+    <nav class="global-controls" aria-label="Analysis geography">
+      <span data-i18n="geography">Geography</span>
+      <button data-geography="region" aria-pressed="true" data-i18n="region">Comunidad de Madrid</button>
+      <button data-geography="city" aria-pressed="false" data-i18n="city">Madrid city</button>
+      <div class="language language-sticky" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><span>/</span><button data-lang="es" aria-pressed="false">ES</button></div>
+    </nav>
+
+    <section class="chapter coverage" id="coverage">
+      <header class="chapter-heading"><span>01</span><div><p class="eyebrow" data-i18n="closeEyebrow">Residents by distance to rail</p><h2 data-i18n="closeTitle">How close Madrid lives to rail.</h2><p data-i18n="closeBody">Each resident is assigned the distance to their nearest station. This can vary by station point choice and rail mode.</p></div></header>
+      <div class="control-deck" id="coverage-controls">
+        <fieldset><legend data-i18n="pointMethod">Station point</legend><button data-coverage-method="entrance" aria-pressed="true" data-i18n="entrance">Entrance</button><button data-coverage-method="platform" aria-pressed="false" data-i18n="platform">Platform</button><button data-coverage-method="compare" aria-pressed="false" data-i18n="compareBoth">Compare both</button></fieldset>
+        <fieldset><legend data-i18n="measure">Measure</legend><button data-area-measure="share" aria-pressed="true" data-i18n="percentPopulation">% population</button><button data-area-measure="population" aria-pressed="false" data-i18n="residents">Residents</button></fieldset>
+        <fieldset><legend data-i18n="railView">Rail view</legend><button data-rail-view="all" aria-pressed="true" data-i18n="allRail">All rail</button><button data-rail-view="nested" aria-pressed="false" data-i18n="byContribution">By contribution</button></fieldset>
+      </div>
+      <div class="visual-pair">
+        <figure><div class="figure-title"><span data-i18n="cumulative">Cumulative residents</span><b data-i18n="distanceTag">Straight-line distance</b></div><div id="coverage-chart" class="chart" role="img"></div><figcaption data-i18n="coverageCaption">Metro is shown first; Cercanías and then Metro Ligero/Tranvía show their additional reach.</figcaption></figure>
+        <figure><div class="figure-title"><span data-i18n="distribution">Distance distribution</span><b data-i18n="distanceTag">Straight-line distance</b></div><div id="distribution-chart" class="chart" role="img"></div><figcaption data-i18n="distributionCaption">Residents more than 1,500 metres away from their nearest station are not shown here.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="map-chapter dark" id="geography-map">
+      <header class="chapter-heading"><span>02</span><div><p class="eyebrow" data-i18n="exploreEyebrow">Explore the geography</p><h2 data-i18n="exploreTitle">Every home has a nearest station.</h2><p data-i18n="exploreBody">Zoom in to see the residential components used in the population model.</p></div></header>
+      <div class="map-toolbar"><fieldset><legend data-i18n="pointMethod">Station point</legend><button data-map-method="entrance" aria-pressed="true" data-i18n="entrance">Entrance</button><button data-map-method="platform" aria-pressed="false" data-i18n="platform">Platform</button></fieldset><button id="map-reset" data-i18n="resetExtent">Reset extent</button><span data-i18n="distanceTag">Straight-line distance</span></div>
+      <div id="residential-map" class="map" aria-label="Residential buildings coloured by distance to rail"></div>
+      <div class="distance-legend" id="distance-legend"></div>
+      <p class="map-note" data-i18n="mapNote">Select a station or zoom closer to reveal its entrances or platforms and their connecting lines.</p>
+    </section>
+
+    <section class="chapter districts" id="districts">
+      <header class="chapter-heading"><span>03</span><div><p class="eyebrow" data-i18n="neighbourEyebrow">How neighbourhoods compare</p><h2 data-i18n="neighbourTitle">Twenty-one districts, very different distances.</h2><p data-i18n="neighbourBody">How well covered by rail are residents in each Madrid district?</p></div></header>
+      <div class="comparison-controls"><label><span data-i18n="primaryDistrict">Primary district</span><select id="district-1"></select></label><label><span data-i18n="compareDistrict">Compare district</span><select id="district-2"></select></label><label><span data-i18n="compareDistrict">Compare district</span><select id="district-3"></select></label></div>
+      <div class="control-deck compact"><fieldset><legend data-i18n="pointMethod">Station point</legend><button data-district-method="entrance" aria-pressed="true" data-i18n="entrance">Entrance</button><button data-district-method="platform" aria-pressed="false" data-i18n="platform">Platform</button></fieldset><fieldset><legend data-i18n="measure">Measure</legend><button data-district-measure="share" aria-pressed="true" data-i18n="percentPopulation">% population</button><button data-district-measure="population" aria-pressed="false" data-i18n="residents">Residents</button></fieldset><fieldset><legend data-i18n="railView">Rail view</legend><button data-district-rail="all" aria-pressed="true" data-i18n="allRail">All rail</button><button data-district-rail="mode" aria-pressed="false" data-i18n="byMode">By mode</button></fieldset></div>
+      <figure><div class="figure-title"><span data-i18n="districtCoverage">District cumulative coverage</span><b data-i18n="distanceTag">Straight-line distance</b></div><div id="district-chart" class="chart tall" role="img"></div></figure>
+    </section>
+
+    <section class="station-section dark" id="stations">
+      <header class="chapter-heading"><span>04</span><div><p class="eyebrow" data-i18n="stationsEyebrow">How stations compare</p><h2 data-i18n="stationsTitle">Catchments overlap. Hinterlands do not.</h2><p data-i18n="stationsBody">A catchment counts everyone within a radius of one station; a hinterland assigns each resident to their single nearest station.</p></div></header>
+      <div class="station-searches"><label><span data-i18n="primaryStation">Primary station</span><span class="input-wrap"><button type="button" class="clear-input" data-clear-input="station-1" aria-label="Clear station">×</button><input id="station-1" list="station-list" value="Atocha"></span></label><label><span data-i18n="compareStation">Compare station</span><span class="input-wrap"><button type="button" class="clear-input" data-clear-input="station-2" aria-label="Clear station" hidden>×</button><input id="station-2" list="station-list"></span></label><label><span data-i18n="compareStation">Compare station</span><span class="input-wrap"><button type="button" class="clear-input" data-clear-input="station-3" aria-label="Clear station" hidden>×</button><input id="station-3" list="station-list"></span></label><datalist id="station-list"></datalist></div>
+      <div class="control-deck inverse compact"><fieldset><legend data-i18n="pointMethod">Station point</legend><button data-station-method="entrance" aria-pressed="true" data-i18n="entrance">Entrance</button><button data-station-method="platform" aria-pressed="false" data-i18n="platform">Platform</button></fieldset><fieldset><legend data-i18n="measure">Measure</legend><button data-station-measure="population" aria-pressed="true" data-i18n="residents">Residents</button><button data-station-measure="density" aria-pressed="false" data-i18n="density">Density</button></fieldset></div>
+      <figure><div class="figure-title"><span data-i18n="stationCurve">Station cumulative catchment</span><b data-i18n="distanceTag">Straight-line distance</b></div><div id="station-chart" class="chart" role="img"></div></figure>
+      <div class="ranking-layout">
+        <div><div class="ranking-controls"><label><span data-i18n="rankingMetric">Ranking metric</span><select id="ranking-metric"><option value="radius" data-i18n="withinRadius">Residents within radius</option><option value="hinterland" data-i18n="hinterlandPopulation">Nearest-station population</option></select></label><label id="radius-label"><span><span data-i18n="radius">Radius</span> <b id="radius-value">800 m</b></span><input id="ranking-radius" type="range" min="100" max="1500" step="25" value="800"></label><label><span data-i18n="mode">Mode</span><select id="mode-filter"><option value="all" data-i18n="allRail">All rail</option><option value="metro">Metro</option><option value="cercanias">Cercanías</option><option value="metro_ligero">Metro Ligero</option><option value="tranvia_parla">Tranvía de Parla</option></select></label><button id="ranking-direction" data-direction="top" data-i18n="top">Top</button></div><div id="ranking-chart" class="chart tall"></div></div>
+        <div><div id="station-map" class="map station-map"></div><aside id="station-card" class="station-card" aria-live="polite"></aside></div>
+      </div>
+    </section>
+
+    <section class="methods" id="methods">
+      <header><p class="eyebrow" data-i18n="methodsEyebrow">Method & limitations</p><h2 data-i18n="methodsTitle">An estimate with explicit boundaries.</h2></header>
+      <div class="methods-copy"><h3 class="limitations-title" data-i18n="limitations">Limitations</h3>
+        <p data-i18n-html="methodPopulation"><strong>Population.</strong> Official INE population totals for each census section on 1 January 2025 were distributed across the residential buildings within that section according to their estimated number of dwellings. Dwelling counts were reconstructed from Catastro data; where a cadastral property contained multiple residential building components, dwellings were distributed between them according to their relative size. The procedure preserves the official INE population total for every census section.</p>
+        <p data-i18n-html="methodRegional"><strong>Regional coverage.</strong> For each population component, we calculate the distance to its nearest eligible rail station entrance or platform. Coverage at each radius is the population whose nearest station lies within that distance, ensuring each resident is counted only once.</p>
+        <ol><li data-i18n="limit1">This estimates residents, not actual occupied addresses.</li><li data-i18n="limit2">Dwelling occupancy is not uniform; the model assumes equal average occupancy within a census section.</li><li data-i18n="limit3">Distances are geometric, not walking distances; barriers and street layouts are not represented.</li><li data-i18n="limit4">INE population, Catastro and station information represent different source dates.</li><li data-i18n="limit5">Area selections exclude residents immediately outside their boundary, while eligible nearby stations remain available.</li></ol>
+      </div>
+      <div class="downloads"><p class="eyebrow" data-i18n="downloads">Download data</p><a href="downloads/coverage-curves-2025.csv" download data-i18n="downloadCoverage">Coverage curves · CSV</a><a href="downloads/distance-histograms-2025.csv" download data-i18n="downloadHistogram">Distance histograms · CSV</a><a href="downloads/station-catchment-curves-2025.csv" download data-i18n="downloadCatchments">Station catchments · CSV</a><a href="downloads/station-hinterlands-2025.csv" download data-i18n="downloadHinterlands">Station hinterlands · CSV</a><a href="downloads/station-origins-phase7.csv" download data-i18n="downloadOrigins">Station origins · CSV</a></div>
+    </section>
+  </main>
+  <footer><p><strong data-i18n="sources">Sources:</strong> INE 2025 · Catastro 2026 · CRTM 2026</p><p data-i18n="footer">Analysis, modelling and cartography by Daniel Almazán.</p><a href="https://danielalmazan.com/">danielalmazan.com</a></footer>
+  <div id="tooltip" class="tooltip" hidden></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

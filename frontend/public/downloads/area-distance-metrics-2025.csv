@@ -1,0 +1,231 @@
+geography_type,geography_id,geography_name,point_method,rail_network,population,median_distance_m,mean_distance_m
+city,city,Madrid city,entrance,all_rail,3477496.99999981,319.903208741445,399.321423756843
+city,city,Madrid city,entrance,cercanias,3477496.99999981,1242.04454519655,1504.62486306083
+city,city,Madrid city,entrance,metro,3477496.99999981,338.92397845662,511.882549843027
+city,city,Madrid city,entrance,metro_cercanias,3477496.99999981,324.036459595482,408.589773785969
+city,city,Madrid city,entrance,mlt,3477496.99999981,5581.40877097643,5683.79996866797
+city,city,Madrid city,platform,all_rail,3477496.99999981,346.893826868324,421.550246822276
+city,city,Madrid city,platform,cercanias,3477496.99999981,1295.69980660498,1549.31814453565
+city,city,Madrid city,platform,metro,3477496.99999981,368.760502451023,539.160849879937
+city,city,Madrid city,platform,metro_cercanias,3477496.99999981,352.103954780383,431.646648853337
+city,city,Madrid city,platform,mlt,3477496.99999981,5651.99748943208,5742.97443824342
+district,district_01,Centro,entrance,all_rail,141018,183.311037593223,194.873400035986
+district,district_01,Centro,entrance,cercanias,141018,587.870935949383,599.403385898512
+district,district_01,Centro,entrance,metro,141018,183.311037593223,194.873400035986
+district,district_01,Centro,entrance,metro_cercanias,141018,183.311037593223,194.873400035986
+district,district_01,Centro,entrance,mlt,141018,6404.72320614859,6307.48186062573
+district,district_01,Centro,platform,all_rail,141018,200.72598230478,211.8244229858
+district,district_01,Centro,platform,cercanias,141018,638.263268714719,658.969448124103
+district,district_01,Centro,platform,metro,141018,201.455039418341,212.9581585498
+district,district_01,Centro,platform,metro_cercanias,141018,200.72598230478,211.8244229858
+district,district_01,Centro,platform,mlt,141018,6469.87267810456,6376.3854043451
+district,district_02,Arganzuela,entrance,all_rail,157254.999999999,286.96219892289,333.502903650304
+district,district_02,Arganzuela,entrance,cercanias,157254.999999999,407.305942337869,474.150749249356
+district,district_02,Arganzuela,entrance,metro,157254.999999999,286.96219892289,333.502903650304
+district,district_02,Arganzuela,entrance,metro_cercanias,157254.999999999,286.96219892289,333.502903650304
+district,district_02,Arganzuela,entrance,mlt,157254.999999999,6507.01355354768,6351.84536441836
+district,district_02,Arganzuela,platform,all_rail,157254.999999999,309.881730087433,350.637144076784
+district,district_02,Arganzuela,platform,cercanias,157254.999999999,523.094246022763,564.626587748492
+district,district_02,Arganzuela,platform,metro,157254.999999999,327.604330333708,363.845904940339
+district,district_02,Arganzuela,platform,metro_cercanias,157254.999999999,309.881730087433,350.637144076784
+district,district_02,Arganzuela,platform,mlt,157254.999999999,6565.62056293408,6409.98252793778
+district,district_03,Retiro,entrance,all_rail,119149,246.418137207775,256.804720484948
+district,district_03,Retiro,entrance,cercanias,119149,1147.9143158465,1204.40295333
+district,district_03,Retiro,entrance,metro,119149,246.418137207775,256.804720484948
+district,district_03,Retiro,entrance,metro_cercanias,119149,246.418137207775,256.804720484948
+district,district_03,Retiro,entrance,mlt,119149,7887.24941277443,7753.07073384735
+district,district_03,Retiro,platform,all_rail,119149,287.595943363315,292.449933126771
+district,district_03,Retiro,platform,cercanias,119149,1150.44744896847,1199.3956134959
+district,district_03,Retiro,platform,metro,119149,287.595943363315,292.624248810403
+district,district_03,Retiro,platform,metro_cercanias,119149,287.595943363315,292.449933126771
+district,district_03,Retiro,platform,mlt,119149,7963.17786753087,7842.33527321124
+district,district_04,Salamanca,entrance,all_rail,147302.999999999,206.27630083404,221.020253789197
+district,district_04,Salamanca,entrance,cercanias,147302.999999999,1657.49850707287,1636.11927161836
+district,district_04,Salamanca,entrance,metro,147302.999999999,206.27630083404,221.020253789197
+district,district_04,Salamanca,entrance,metro_cercanias,147302.999999999,206.27630083404,221.020253789197
+district,district_04,Salamanca,entrance,mlt,147302.999999999,5638.43957331556,5576.84917583429
+district,district_04,Salamanca,platform,all_rail,147302.999999999,226.964378620378,236.129930025836
+district,district_04,Salamanca,platform,cercanias,147302.999999999,1712.40271084014,1685.49825216539
+district,district_04,Salamanca,platform,metro,147302.999999999,228.119203964066,237.022140983503
+district,district_04,Salamanca,platform,metro_cercanias,147302.999999999,226.964378620378,236.129930025836
+district,district_04,Salamanca,platform,mlt,147302.999999999,5746.57313496287,5684.60258147556
+district,district_05,Chamartín,entrance,all_rail,147673.999999999,274.49088136572,282.699245516039
+district,district_05,Chamartín,entrance,cercanias,147673.999999999,1367.36848710749,1321.15220916137
+district,district_05,Chamartín,entrance,metro,147673.999999999,274.49088136572,282.699245516039
+district,district_05,Chamartín,entrance,metro_cercanias,147673.999999999,274.49088136572,282.699245516039
+district,district_05,Chamartín,entrance,mlt,147673.999999999,3282.41853894504,3163.27179037992
+district,district_05,Chamartín,platform,all_rail,147673.999999999,310.223092044744,315.055727258342
+district,district_05,Chamartín,platform,cercanias,147673.999999999,1405.84603316673,1351.38938951662
+district,district_05,Chamartín,platform,metro,147673.999999999,314.293637076734,316.817367009738
+district,district_05,Chamartín,platform,metro_cercanias,147673.999999999,310.223092044744,315.055727258342
+district,district_05,Chamartín,platform,mlt,147673.999999999,3391.99526934079,3272.1837021497
+district,district_06,Tetuán,entrance,all_rail,166612.000000001,293.379133776049,312.294647836702
+district,district_06,Tetuán,entrance,cercanias,166612.000000001,1261.7752639844,1227.58164934835
+district,district_06,Tetuán,entrance,metro,166612.000000001,293.379133776049,312.294647836702
+district,district_06,Tetuán,entrance,metro_cercanias,166612.000000001,293.379133776049,312.294647836702
+district,district_06,Tetuán,entrance,mlt,166612.000000001,3762.19699713263,3735.20661959851
+district,district_06,Tetuán,platform,all_rail,166612.000000001,335.134761333164,351.07636426834
+district,district_06,Tetuán,platform,cercanias,166612.000000001,1417.19027364959,1383.44312984773
+district,district_06,Tetuán,platform,metro,166612.000000001,335.134761333164,351.07636426834
+district,district_06,Tetuán,platform,metro_cercanias,166612.000000001,335.134761333164,351.07636426834
+district,district_06,Tetuán,platform,mlt,166612.000000001,3859.87737598811,3838.01009710888
+district,district_07,Chamberí,entrance,all_rail,141205,207.137264208948,213.376521222699
+district,district_07,Chamberí,entrance,cercanias,141205,1181.42476879007,1135.10035073156
+district,district_07,Chamberí,entrance,metro,141205,207.137264208948,213.376521222699
+district,district_07,Chamberí,entrance,metro_cercanias,141205,207.137264208948,213.376521222699
+district,district_07,Chamberí,entrance,mlt,141205,5880.12307300689,5751.4686173761
+district,district_07,Chamberí,platform,all_rail,141205,244.586598020668,244.600128253955
+district,district_07,Chamberí,platform,cercanias,141205,1287.9176399959,1251.13808290147
+district,district_07,Chamberí,platform,metro,141205,244.586598020668,244.600128253955
+district,district_07,Chamberí,platform,metro_cercanias,141205,244.586598020668,244.600128253955
+district,district_07,Chamberí,platform,mlt,141205,5984.59291977908,5858.96710478516
+district,district_08,Fuencarral-El Pardo,entrance,all_rail,255391,366.449339073232,484.361180048644
+district,district_08,Fuencarral-El Pardo,entrance,cercanias,255391,1166.49488215309,1283.17142966881
+district,district_08,Fuencarral-El Pardo,entrance,metro,255391,385.276800903008,531.616310404684
+district,district_08,Fuencarral-El Pardo,entrance,metro_cercanias,255391,373.602846331796,489.308466932419
+district,district_08,Fuencarral-El Pardo,entrance,mlt,255391,3310.54839664382,3223.84305401575
+district,district_08,Fuencarral-El Pardo,platform,all_rail,255391,381.234265921708,495.086869812126
+district,district_08,Fuencarral-El Pardo,platform,cercanias,255391,1175.46367094437,1308.73517077414
+district,district_08,Fuencarral-El Pardo,platform,metro,255391,398.195127168268,551.857295305581
+district,district_08,Fuencarral-El Pardo,platform,metro_cercanias,255391,390.104084854135,504.157388129536
+district,district_08,Fuencarral-El Pardo,platform,mlt,255391,3350.20694869418,3261.32097864832
+district,district_09,Moncloa-Aravaca,entrance,all_rail,125225.999999999,389.803091131603,622.565108996368
+district,district_09,Moncloa-Aravaca,entrance,cercanias,125225.999999999,1324.95624334789,1537.93367058588
+district,district_09,Moncloa-Aravaca,entrance,metro,125225.999999999,442.965090963745,1889.21332393652
+district,district_09,Moncloa-Aravaca,entrance,metro_cercanias,125225.999999999,395.002790530139,624.322154996269
+district,district_09,Moncloa-Aravaca,entrance,mlt,125225.999999999,4730.84587770877,3963.2980064437
+district,district_09,Moncloa-Aravaca,platform,all_rail,125225.999999999,438.497348529665,650.108818629784
+district,district_09,Moncloa-Aravaca,platform,cercanias,125225.999999999,1388.40253955956,1607.01542700035
+district,district_09,Moncloa-Aravaca,platform,metro,125225.999999999,502.866079681107,1938.13964428243
+district,district_09,Moncloa-Aravaca,platform,metro_cercanias,125225.999999999,443.643947668796,653.302664877452
+district,district_09,Moncloa-Aravaca,platform,mlt,125225.999999999,4807.70419704768,4028.05717329348
+district,district_10,Latina,entrance,all_rail,250737.000000002,370.886145671934,420.937650836292
+district,district_10,Latina,entrance,cercanias,250737.000000002,812.676141894013,828.864713970676
+district,district_10,Latina,entrance,metro,250737.000000002,409.260345185504,490.392011790651
+district,district_10,Latina,entrance,metro_cercanias,250737.000000002,370.886145671934,421.456771283068
+district,district_10,Latina,entrance,mlt,250737.000000002,2103.50454807951,2221.88291899207
+district,district_10,Latina,platform,all_rail,250737.000000002,381.624086899765,426.507874316662
+district,district_10,Latina,platform,cercanias,250737.000000002,842.579407142894,867.363906626059
+district,district_10,Latina,platform,metro,250737.000000002,421.121045071725,499.428062659727
+district,district_10,Latina,platform,metro_cercanias,250737.000000002,382.809682436437,427.530983420336
+district,district_10,Latina,platform,mlt,250737.000000002,2131.55599447919,2262.50985823714
+district,district_11,Carabanchel,entrance,all_rail,276333.999999999,312.418178022462,353.315465643306
+district,district_11,Carabanchel,entrance,cercanias,276333.999999999,1522.01413320225,1572.44075282648
+district,district_11,Carabanchel,entrance,metro,276333.999999999,312.418178022462,353.315465643306
+district,district_11,Carabanchel,entrance,metro_cercanias,276333.999999999,312.418178022462,353.315465643306
+district,district_11,Carabanchel,entrance,mlt,276333.999999999,3885.60575293913,3887.93684181835
+district,district_11,Carabanchel,platform,all_rail,276333.999999999,329.912634448022,369.895792419681
+district,district_11,Carabanchel,platform,cercanias,276333.999999999,1596.7561575454,1631.11476085378
+district,district_11,Carabanchel,platform,metro,276333.999999999,329.912634448022,369.895792419681
+district,district_11,Carabanchel,platform,metro_cercanias,276333.999999999,329.912634448022,369.895792419681
+district,district_11,Carabanchel,platform,mlt,276333.999999999,3913.92069642052,3928.36495562132
+district,district_12,Usera,entrance,all_rail,151381.999999998,397.387242589362,434.287294947938
+district,district_12,Usera,entrance,cercanias,151381.999999998,891.414229201454,893.805456281535
+district,district_12,Usera,entrance,metro,151381.999999998,442.122634983243,568.741580743292
+district,district_12,Usera,entrance,metro_cercanias,151381.999999998,397.387242589362,434.287294947938
+district,district_12,Usera,entrance,mlt,151381.999999998,6186.98845039698,6361.22375497829
+district,district_12,Usera,platform,all_rail,151381.999999998,427.004451072022,459.878394681094
+district,district_12,Usera,platform,cercanias,151381.999999998,906.834856490843,898.220278005094
+district,district_12,Usera,platform,metro,151381.999999998,472.437775157598,599.839153056146
+district,district_12,Usera,platform,metro_cercanias,151381.999999998,427.004451072022,459.878394681094
+district,district_12,Usera,platform,mlt,151381.999999998,6236.14933013748,6408.05219510737
+district,district_13,Puente de Vallecas,entrance,all_rail,256367.000000003,447.940070384432,456.303372235826
+district,district_13,Puente de Vallecas,entrance,cercanias,256367.000000003,1039.09343489752,1043.87696269781
+district,district_13,Puente de Vallecas,entrance,metro,256367.000000003,614.576028144463,746.944567012275
+district,district_13,Puente de Vallecas,entrance,metro_cercanias,256367.000000003,447.940070384432,456.303372235826
+district,district_13,Puente de Vallecas,entrance,mlt,256367.000000003,9460.92061900086,9619.61070750732
+district,district_13,Puente de Vallecas,platform,all_rail,256367.000000003,467.035289765205,479.36735847265
+district,district_13,Puente de Vallecas,platform,cercanias,256367.000000003,1071.33843323628,1072.72685001861
+district,district_13,Puente de Vallecas,platform,metro,256367.000000003,643.400917968685,783.583578837667
+district,district_13,Puente de Vallecas,platform,metro_cercanias,256367.000000003,467.035289765205,479.36735847265
+district,district_13,Puente de Vallecas,platform,mlt,256367.000000003,9526.22644117764,9691.61756403126
+district,district_14,Moratalaz,entrance,all_rail,95188.9999999996,363.512504394946,408.00172474145
+district,district_14,Moratalaz,entrance,cercanias,95188.9999999996,2646.24738977874,2632.06501746896
+district,district_14,Moratalaz,entrance,metro,95188.9999999996,363.512504394946,408.00172474145
+district,district_14,Moratalaz,entrance,metro_cercanias,95188.9999999996,363.512504394946,408.00172474145
+district,district_14,Moratalaz,entrance,mlt,95188.9999999996,8432.9476326902,8473.2598665909
+district,district_14,Moratalaz,platform,all_rail,95188.9999999996,436.116669289258,460.504456033846
+district,district_14,Moratalaz,platform,cercanias,95188.9999999996,2702.19549027826,2697.94589880372
+district,district_14,Moratalaz,platform,metro,95188.9999999996,436.116669289258,460.504456033846
+district,district_14,Moratalaz,platform,metro_cercanias,95188.9999999996,436.116669289258,460.504456033846
+district,district_14,Moratalaz,platform,mlt,95188.9999999996,8520.04224620201,8562.60514416532
+district,district_15,Ciudad Lineal,entrance,all_rail,231335.999999997,296.775152163151,325.624759511875
+district,district_15,Ciudad Lineal,entrance,cercanias,231335.999999997,3409.77975076388,3308.47812488121
+district,district_15,Ciudad Lineal,entrance,metro,231335.999999997,299.916202260881,327.193188414852
+district,district_15,Ciudad Lineal,entrance,metro_cercanias,231335.999999997,296.775152163151,325.624759511875
+district,district_15,Ciudad Lineal,entrance,mlt,231335.999999997,5434.8515108592,4914.75578614293
+district,district_15,Ciudad Lineal,platform,all_rail,231335.999999997,317.199241765523,350.101319107962
+district,district_15,Ciudad Lineal,platform,cercanias,231335.999999997,3423.49790615753,3326.72289768431
+district,district_15,Ciudad Lineal,platform,metro,231335.999999997,321.04553580221,353.042745009543
+district,district_15,Ciudad Lineal,platform,metro_cercanias,231335.999999997,318.807176021011,351.596694217841
+district,district_15,Ciudad Lineal,platform,mlt,231335.999999997,5513.44570969321,4995.45801413562
+district,district_16,Hortaleza,entrance,all_rail,207318.999999999,372.472874766687,526.029087711878
+district,district_16,Hortaleza,entrance,cercanias,207318.999999999,1766.93279261239,1826.58666221769
+district,district_16,Hortaleza,entrance,metro,207318.999999999,525.509371183169,816.642899131517
+district,district_16,Hortaleza,entrance,metro_cercanias,207318.999999999,477.685058217587,673.709600982986
+district,district_16,Hortaleza,entrance,mlt,207318.999999999,1799.76556179755,1884.20820507198
+district,district_16,Hortaleza,platform,all_rail,207318.999999999,393.669274424314,552.506999173656
+district,district_16,Hortaleza,platform,cercanias,207318.999999999,1802.45619145064,1853.77957157132
+district,district_16,Hortaleza,platform,metro,207318.999999999,541.245121540928,839.430990109223
+district,district_16,Hortaleza,platform,metro_cercanias,207318.999999999,498.730278566329,705.851656615792
+district,district_16,Hortaleza,platform,mlt,207318.999999999,1815.81497251533,1895.62709821857
+district,district_17,Villaverde,entrance,all_rail,170471.000000001,381.575627400106,394.656754786675
+district,district_17,Villaverde,entrance,cercanias,170471.000000001,520.966728728508,533.965516997409
+district,district_17,Villaverde,entrance,metro,170471.000000001,528.548777688399,608.388328900252
+district,district_17,Villaverde,entrance,metro_cercanias,170471.000000001,381.575627400106,394.656754786675
+district,district_17,Villaverde,entrance,mlt,170471.000000001,8380.72233913361,8553.06729541344
+district,district_17,Villaverde,platform,all_rail,170471.000000001,407.091454809958,416.083356350713
+district,district_17,Villaverde,platform,cercanias,170471.000000001,540.354681712245,554.636233779678
+district,district_17,Villaverde,platform,metro,170471.000000001,579.041882598543,654.857870018393
+district,district_17,Villaverde,platform,metro_cercanias,170471.000000001,407.091454809958,416.083356350713
+district,district_17,Villaverde,platform,mlt,170471.000000001,8413.78819271214,8584.4610949297
+district,district_18,Villa de Vallecas,entrance,all_rail,125166.999999998,397.569795155287,481.18577431959
+district,district_18,Villa de Vallecas,entrance,cercanias,125166.999999998,1135.02003276523,1488.19903200068
+district,district_18,Villa de Vallecas,entrance,metro,125166.999999998,435.87984878688,568.748004128049
+district,district_18,Villa de Vallecas,entrance,metro_cercanias,125166.999999998,397.569795155287,481.18577431959
+district,district_18,Villa de Vallecas,entrance,mlt,125166.999999998,12503.4937891735,12880.8283877086
+district,district_18,Villa de Vallecas,platform,all_rail,125166.999999998,389.811536333057,481.413620086254
+district,district_18,Villa de Vallecas,platform,cercanias,125166.999999998,1140.16789809998,1508.20457891123
+district,district_18,Villa de Vallecas,platform,metro,125166.999999998,423.281734127558,571.392594735633
+district,district_18,Villa de Vallecas,platform,metro_cercanias,125166.999999998,389.811536333057,481.413620086254
+district,district_18,Villa de Vallecas,platform,mlt,125166.999999998,12578.2323299777,12956.7368031859
+district,district_19,Vicálvaro,entrance,all_rail,94183.9999999998,449.91972395646,829.212307242026
+district,district_19,Vicálvaro,entrance,cercanias,94183.9999999998,1346.74136044515,1437.13643604959
+district,district_19,Vicálvaro,entrance,metro,94183.9999999998,449.91972395646,832.048937743072
+district,district_19,Vicálvaro,entrance,metro_cercanias,94183.9999999998,449.91972395646,829.212307242026
+district,district_19,Vicálvaro,entrance,mlt,94183.9999999998,10179.0152525851,10551.8830072797
+district,district_19,Vicálvaro,platform,all_rail,94183.9999999998,495.439239396585,852.879899920903
+district,district_19,Vicálvaro,platform,cercanias,94183.9999999998,1431.73940536293,1462.28299970945
+district,district_19,Vicálvaro,platform,metro,94183.9999999998,495.439239396585,860.855857579532
+district,district_19,Vicálvaro,platform,metro_cercanias,94183.9999999998,495.439239396585,852.879899920903
+district,district_19,Vicálvaro,platform,mlt,94183.9999999998,10192.7290373782,10571.9191397581
+district,district_20,San Blas-Canillejas,entrance,all_rail,168068.999999999,380.739792977286,467.440051377168
+district,district_20,San Blas-Canillejas,entrance,cercanias,168068.999999999,3697.76741497941,3622.57704362772
+district,district_20,San Blas-Canillejas,entrance,metro,168068.999999999,380.739792977286,467.444138213382
+district,district_20,San Blas-Canillejas,entrance,metro_cercanias,168068.999999999,380.739792977286,467.440051377168
+district,district_20,San Blas-Canillejas,entrance,mlt,168068.999999999,6816.0696274864,6802.1913092762
+district,district_20,San Blas-Canillejas,platform,all_rail,168068.999999999,411.345887542427,499.484677593323
+district,district_20,San Blas-Canillejas,platform,cercanias,168068.999999999,3727.02005699179,3653.66967392172
+district,district_20,San Blas-Canillejas,platform,metro,168068.999999999,411.345887542427,499.490152094887
+district,district_20,San Blas-Canillejas,platform,metro_cercanias,168068.999999999,411.345887542427,499.484677593323
+district,district_20,San Blas-Canillejas,platform,mlt,168068.999999999,6818.06369683471,6808.2496738388
+district,district_21,Barajas,entrance,all_rail,50108.9999999997,526.81121531296,532.751072519137
+district,district_21,Barajas,entrance,cercanias,50108.9999999997,2811.83613022142,2936.69161465645
+district,district_21,Barajas,entrance,metro,50108.9999999997,526.81121531296,536.547161827481
+district,district_21,Barajas,entrance,metro_cercanias,50108.9999999997,526.81121531296,532.751072519137
+district,district_21,Barajas,entrance,mlt,50108.9999999997,6216.75476078913,6155.53260182315
+district,district_21,Barajas,platform,all_rail,50108.9999999997,539.239912328217,546.628704724514
+district,district_21,Barajas,platform,cercanias,50108.9999999997,2830.94900452445,2945.37488631864
+district,district_21,Barajas,platform,metro,50108.9999999997,539.239912328217,550.646227262263
+district,district_21,Barajas,platform,metro_cercanias,50108.9999999997,539.239912328217,546.628704724514
+district,district_21,Barajas,platform,mlt,50108.9999999997,6216.93891573618,6158.17856465814
+region,region,Comunidad de Madrid,entrance,all_rail,7113886.00000048,479.366604397427,1739.39540115569
+region,region,Comunidad de Madrid,entrance,cercanias,7113886.00000048,1333.37388128946,2801.57191387363
+region,region,Comunidad de Madrid,entrance,metro,7113886.00000048,610.416142126453,5052.95288435505
+region,region,Comunidad de Madrid,entrance,metro_cercanias,7113886.00000048,506.984106057603,1851.10833254676
+region,region,Comunidad de Madrid,entrance,mlt,7113886.00000048,6866.38882154622,9635.92853715866
+region,region,Comunidad de Madrid,platform,all_rail,7113886.00000048,495.43792534812,1755.62306605893
+region,region,Comunidad de Madrid,platform,cercanias,7113886.00000048,1374.108090898,2830.48773276315
+region,region,Comunidad de Madrid,platform,metro,7113886.00000048,629.357525233893,5072.41105038911
+region,region,Comunidad de Madrid,platform,metro_cercanias,7113886.00000048,523.249865798987,1868.45015474524
+region,region,Comunidad de Madrid,platform,mlt,7113886.00000048,6894.45494628019,9666.54262318035
