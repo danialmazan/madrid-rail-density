@@ -1,4 +1,11 @@
 const replacements:[RegExp,string][]=[
+  [/^Alcobendas-s\.s\. de los Reyes$/,'Alcobendas–San Sebastián de los Reyes'],
+  [/^Barrial-c\.com\.pozuelo, el$/,'El Barrial–Centro Comercial Pozuelo'],
+  [/^Escorial, el$/,'El Escorial'],[/^Garena, la$/,'La Garena'],[/^Goloso, el$/,'El Goloso'],
+  [/^Margaritas-universidad, las$/,'Las Margaritas Universidad'],[/^Matas, las$/,'Las Matas'],
+  [/^Molinos, los$/,'Los Molinos'],[/^Negrales, los$/,'Los Negrales'],[/^Pozo, el$/,'El Pozo'],
+  [/^Retamas, las$/,'Las Retamas'],[/^Rozas, las$/,'Las Rozas'],[/^Serna, la$/,'La Serna'],
+  [/^Zorreras, las$/,'Las Zorreras'],[/^Águilas, las$/,'Las Águilas'],
   [/\bAmerica\b/g,'América'],[/\bVicalvaro\b/g,'Vicálvaro'],[/\bEstacion\b/g,'Estación'],
   [/\bJardin\b/g,'Jardín'],[/\bMartinez\b/g,'Martínez'],[/\bMartin\b/g,'Martín'],
   [/\bConcepcion\b/g,'Concepción'],[/\bAngeles\b/g,'Ángeles'],[/\bMostoles\b/g,'Móstoles'],
@@ -13,8 +20,13 @@ const replacements:[RegExp,string][]=[
   [/\bPacifico\b/g,'Pacífico'],[/\bPoligono\b/g,'Polígono'],[/\bRepublica\b/g,'República'],
   [/\bRios\b/g,'Ríos'],[/\bRuben Dario\b/g,'Rubén Darío'],[/\bFermin\b/g,'Fermín'],
   [/\bBernabeu\b/g,'Bernabéu'],[/\bTetuan\b/g,'Tetuán'],[/\bVelazquez\b/g,'Velázquez'],
+  [/\bAlvarez\b/g,'Álvarez'],[/\bAnton\b/g,'Antón'],[/\bIbañez\b/g,'Ibáñez'],
+  [/\bRodriguez\b/g,'Rodríguez'],[/\bMarañon\b/g,'Marañón'],[/\bChamartin\b/g,'Chamartín'],
+  [/\bEliptica\b/g,'Elíptica'],[/\bComunicacion\b/g,'Comunicación'],[/\bCristobal\b/g,'Cristóbal'],
   [/\bXiii\b/g,'XIII'],[/\bXii\b/g,'XII'],[/\bIi\b/g,'II'],[/\bXxi\b/g,'XXI'],
-  [/T1-t2-t3/g,'T1-T2-T3'],[/S\.s\./g,'S. S.'],[/Arganzuela-planetario/g,'Arganzuela-Planetario']
+  [/T1-t2-t3/g,'T1-T2-T3'],[/S\.s\./g,'S. S.'],[/Arganzuela-planetario/g,'Arganzuela–Planetario'],
+  [/Madrid-entrevías/g,'Madrid–Entrevías'],[/-polideportivo/g,'–Polideportivo'],[/-orcasur/g,'–Orcasur'],
+  [/O'donnell/g,"O'Donnell"]
 ];
 
 export function stationName(name:string){return replacements.reduce((value,[pattern,replacement])=>value.replace(pattern,replacement),name);}
