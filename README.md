@@ -311,3 +311,7 @@ Without CAT inputs, the run completes the public INSPIRE checks but returns `BLO
 - Regueira et al., [Identification of dwellings in Catastro, Andalucía case](https://www.catastro.hacienda.gob.es/documentos/publicaciones/ct/ct99/catastro%2099%20accesible.PDF)
 - Consorcio Regional de Transportes de Madrid, [official open-data portal](https://datos.crtm.es/)
 - CRTM, [open-data licence](https://www.crtm.es/licencia-de-uso)
+
+## Browser analytics opt-out
+
+The HTML entry loads Cloudflare Web Analytics only when `localStorage.getItem("exclude_cf_analytics") !== "1"`. To exclude this browser profile, run `localStorage.setItem("exclude_cf_analytics", "1"); location.reload();` in the site console. To restore tracking, run `localStorage.removeItem("exclude_cf_analytics"); location.reload();`. The preference persists for the exact origin and is shared by all project paths under `https://danielalmazan.com`. Other browsers and profiles retain normal tracking. Reload existing tabs after changing it. No visible settings or other analytics integrations are changed.
