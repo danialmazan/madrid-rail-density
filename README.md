@@ -315,3 +315,5 @@ Without CAT inputs, the run completes the public INSPIRE checks but returns `BLO
 ## Browser analytics opt-out
 
 The HTML entry loads Cloudflare Web Analytics only when `localStorage.getItem("exclude_cf_analytics") !== "1"`. To exclude this browser profile, run `localStorage.setItem("exclude_cf_analytics", "1"); location.reload();` in the site console. To restore tracking, run `localStorage.removeItem("exclude_cf_analytics"); location.reload();`. The preference persists for the exact origin and is shared by all project paths under `https://danielalmazan.com`. Other browsers and profiles retain normal tracking. Reload existing tabs after changing it. No visible settings or other analytics integrations are changed.
+
+The preference check runs before any beacon request. If browser storage is unavailable, normal analytics continues without a storage exception. Cloudflare must use manual snippet installation; automatically injected scripts operate outside this browser preference check.
